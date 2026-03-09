@@ -1,0 +1,25 @@
+key_name        = "my-key"
+ssh_key_private = "~/.ssh/my-key"
+security_group  = "my-security-group"
+instance_name   = "my-lab"
+
+os = "rhel" # default OS for instances that don't specify one
+# os = "ubuntu"
+
+# Wallarm
+wallarm_node_token = "" # node token from Wallarm Console
+wallarm_version    = "6.10.1"
+wallarm_cloud      = "US"
+wallarm_labels     = "group=default"
+wallarm_mode       = "monitoring"
+
+# Domain & TLS
+domain        = ""
+certbot_email = ""
+route53_zone  = ""
+
+instances = {
+  "1" = { instance_type = "t3.small" }
+  # "2" = { instance_type = "t3.medium" }
+  # "3" = { instance_type = "t3.medium", os = "ubuntu" }
+}
