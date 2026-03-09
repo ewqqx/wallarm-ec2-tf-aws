@@ -1,0 +1,23 @@
+# Terraform
+.terraform/
+# .terraform.lock.hcl is intentionally NOT ignored - it should be committed to pin provider versions
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.d/
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# SSH keys
+*.pem
+id_rsa
+id_rsa.pub
+*.key
+
+# macOS
+.DS_Store
