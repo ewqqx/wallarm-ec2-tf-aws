@@ -19,5 +19,8 @@ id_rsa
 id_rsa.pub
 *.key
 
+# Claude Code
+.claude/
+
 # macOS
 .DS_Store
